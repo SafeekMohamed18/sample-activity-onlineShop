@@ -1,17 +1,22 @@
 <section>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container">
+  <nav class="navbar navbar-light bg-light ">
+    <div class="container d-flex justify-content-around">
       <a class="navbar-brand" href="#">
         Mohamed Safeek
       </a>
-
       <div class="d-flex justify-content-end mt-2 pointer">
        <div class="border rounded me-3 position-relative p-2" data-bs-toggle="modal" data-bs-target="#add-to-cart">
-        ADD TO CART <i class="fa-solid fa-cart-shopping"></i>
+       <i class="fa-solid fa-cart-shopping"></i>
         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
           {{products.length}}
           <span class="visually-hidden">unread messages</span>
         </span>
+       </div>
+       <div class="Profile align-middle">
+        <P class="align-middle">dabbu dum <i class="fa-solid fa-user" style="color: #28f0e3;"></i></P>
+       </div>
+       <div class="logout">
+        <button type="button" class="btn btn-danger">Logout </button>
        </div>
       </div>
     </div>
